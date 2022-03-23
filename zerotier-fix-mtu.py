@@ -32,8 +32,8 @@ if not interface.lower().startswith('zt'):
 
 
 # (re)set the mtu to zt default_mtu
-print ('setting the mtu on interface %s to %s' %(interface, DEFAULT_MTU=))
-ip_link_set = 'ip link set %s mtu %s' %(interface, DEFAULT_MTU=)
+print ('setting the mtu on interface %s to %s' %(interface, DEFAULT_MTU))
+ip_link_set = 'ip link set %s mtu %s' %(interface, DEFAULT_MTU)
 subprocess.getoutput(ip_link_set)
 
 
