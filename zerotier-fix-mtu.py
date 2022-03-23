@@ -3,6 +3,9 @@
 """
 rac: 2022-03-21 fix-zerotier-mtu.py
 This program tries to set a better mtu for the zerotier interface
+
+usage:
+       python3 fix-zerotier-mtu.py ip.add.re.ss
 """
 
 import sys
@@ -14,7 +17,7 @@ DEFAULT_MTU='2800'
 # 0=program name, 1=ip_address
 if len(sys.argv) < 2:
     print ('usage:')
-    print ('      ', sys.argv[0], ' ip.add.re.ss')
+    print ('      ', sys.argv[0], 'ip.add.re.ss')
     sys.exit(1)
 ip_dst = sys.argv[1]
 
