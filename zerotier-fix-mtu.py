@@ -10,7 +10,7 @@ import subprocess
 
 DEFAULT_MTU='2800'
 
-# check that we were given at least on argument
+# check that we were given at least one argument
 # 0=program name, 1=ip_address
 if len(sys.argv) < 2:
     print ('usage:')
